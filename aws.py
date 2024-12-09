@@ -11,7 +11,8 @@ def hello_world():
 def change_language(lang):
     print(f"language selected: {lang}")
 
-    return redirect(url_for('index_navbar'))   
+    # gebot dat is de naam van de functie
+    return redirect(url_for('hello_world'))   
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0')
